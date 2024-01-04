@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            cursor: crosshair !important;
+            background-color: black;
+        }
+
+        #wrapper {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        #diagram {
+            width: 50%;
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        #map {
+            width: 50%;
+            cursor: crosshair;
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        .mapboxgl-ctrl-bottom-left {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="map"></div>
+        <div id="diagram"></div>
+    </div>
+
+    <script src="dist/index.js"></script>
+</body>
+
+</html>

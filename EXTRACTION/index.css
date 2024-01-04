@@ -1,0 +1,12 @@
+body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+body div{    
+    padding: 10px;
+}
+#node{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
